@@ -23,7 +23,7 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
 ### Board 1 (Sender)
 - Listen for incoming CAN messages on address 0x1
 - Use external button on **PB6** with interrupt.
-- On button press, send a single CAN packet
+- On button press, send a single CAN message
   - Send to address 0x2
 - On receipt:
   - Blink LED once.  
@@ -32,7 +32,7 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
 ### Board 2 (Receiver)
 - Listen for incoming CAN messages on address 0x2
 - On receipt:
-  - Send back an ACK packet to address 0x1.
+  - Send back a message to address 0x1.
   - Blink LED once.  
 
 ### Both Boards
@@ -43,7 +43,6 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
 ## Implementation Notes
 
 - HAL, LL, or bare-metal STM32 code is acceptable.
-- CAN bitrate must be appropriate for 12V systems.
 - Use **interrupts**, not polling, wherever applicable.
 
 ---
