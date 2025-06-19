@@ -11,8 +11,8 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
 - **Power Supply**: 12V
 - **CAN Transceiver**: External
 - **Pin Mapping**:
-  - **LED**: GPIOB, Pin 2
-  - **Button Input**: GPIOB, Pin 6
+  - **LED**: GPIOB, Pin 11
+  - **Button Input**: GPIOB, Pin 2
   - **CAN RX**: GPIOA, Pin 11
   - **CAN TX**: GPIOA, Pin 12
 
@@ -61,7 +61,7 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
 ## Bonus Points
 
 - Implement basic debounce or protection against interrupt flooding.
-- Use of a WS2812B LED or similar LED instead of a basic LED
+- Use of a WS2812B LED on GPIOA, Pin 0 alongside the basic LED
 
 ---
 
