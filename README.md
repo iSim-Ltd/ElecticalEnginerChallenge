@@ -55,6 +55,8 @@ Design and implement a two-board system using STM32 microcontrollers (STM32G4 se
    - Pin mapping
    - CAN message format
    - Flow/state diagrams
+   
+Deilverables can be submitted via either a google drive (or similar) link to a zip file, or a link to a public github repository containing the submission
 
 ---
 
